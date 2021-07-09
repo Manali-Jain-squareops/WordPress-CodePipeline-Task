@@ -58,6 +58,7 @@ define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
 define('WP_HOME','https://manali.squareops.xyz/');
 define('WP_SITEURL','https://manali.squareops.xyz/');
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
 /**#@-*/
 
 /**
